@@ -1,0 +1,84 @@
+% HMC Math dept HW template example
+% v0.04 by Eric J. Malm, 10 Mar 2005
+\documentclass[12pt,letterpaper,boxed,cm]{hmcpset}
+
+% set 1-inch margins in the document
+\usepackage[margin=1in]{geometry}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+% include this if you want to import graphics files with /includegraphics
+\usepackage{graphicx}
+\usepackage{cases}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+% info for header block in upper right hand corner
+\name{Name: ~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\class{Physics 51}
+\assignment{Homework \#7}
+\duedate{September 22, 2016}
+
+\newcommand{\ev}[2]{\Big|_{#1}^{#2}}
+\newcommand{\evv}[2]{\Big|_{#1}^{#2}}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\s}[1]{\sqrt{#1}}
+\newcommand{\f}[2]{\frac{#1}{#2}}
+\newcommand{\p}[2]{\frac{\partial #1}{\partial #2}}
+\providecommand{\t}[1]{\text{#1}}
+\providecommand{\span}[1]{\text{span}\left(#1\right)}
+\providecommand{\set}[1]{\left\{#1\right\}}
+\providecommand{\l}[0]{\left}
+\providecommand{\r}[0]{\right}
+\newcommand{\m}[1]{\begin{matrix}#1\end{matrix}}
+\newcommand{\bm}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\renewcommand{\bf}[1]{\mathbf{#1}}
+\newcommand{\pn}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bk}[1]{\left[ #1 \right]}
+\newcommand{\cis}[1]{\pn{\cos\pn{#1} + i\sin\pn{#1}}}
+\newcommand{\cisi}[1]{\pn{\cos\pn{#1} - i\sin\pn{#1}}}
+\renewcommand{\Im}[1]{\text{Im}\pn{#1}}
+\renewcommand{\Re}[1]{\text{Re}\pn{#1}}
+\renewcommand{\k}[0]{\f{1}{4\pi\epsilon_0}}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+\begin{document}
+\problemlist{28-E42, SUP6}
+
+\begin{problem}[28-E42]
+	Consider two widely separated conducting spheres, 1 and 2, the second having twice the diameter of the first. The smaller sphere initially has a positive charge $q$ and the larger one is initially uncharged. You now connect the spheres with a long thin wire. 
+\begin{enumerate}
+	\item[(a)] How are the final potentials $V_1$ and $V_2$ of the spheres related?
+	\item[(b)] Find the final charges $q_1$ and $q_2$ on the spheres in terms of $q$.
+\end{enumerate}
+\end{problem}
+\begin{solution}
+\end{solution}
+\newpage
+
+
+\begin{problem}[SUP6]
+\begin{enumerate}
+	\item[(a)] The current density across a cylindrical conductor of radius $R$ varies according to the equation
+\[
+	j = j_0\pn{1 - \f{r}{R}},
+\]
+where $r$ is the distance from the axis. Thus the current density is maximum $j_0$ at the axis $r = 0$ and decreases linearly to zero at the surface $r = R$. Calculate the current in terms of $j_0$ and the conductor's cross-sectional area $A = \pi R^2$. 
+	\item[(b)] Suppose that, instead, the current density is a maximum $j_0$ at the surface and decreases linearly to zero at the axis, so that
+\[
+	j = j_0\pn{\f{r}{R}}.
+\]
+Calculate the current. Why is the result different from (a)?
+\end{enumerate}
+\end{problem}
+\begin{solution}
+\end{solution}
+
+\end{document}
