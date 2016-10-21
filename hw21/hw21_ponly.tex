@@ -1,0 +1,88 @@
+% HMC Math dept HW template example
+% v0.04 by Eric J. Malm, 10 Mar 2005
+\documentclass[12pt,letterpaper,boxed,cm]{hmcpset}
+
+% set 1-inch margins in the document
+\usepackage[margin=1in]{geometry}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+% include this if you want to import graphics files with /includegraphics
+\usepackage{graphicx}
+\usepackage{cases}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{cases}
+\usepackage{mathalfa}
+\usetikzlibrary{arrows}
+
+% info for header block in upper right hand corner
+\name{Name: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\class{Physics 51}
+\assignment{Homework \#21}
+\duedate{November 23, 2016}
+
+\newcommand{\ev}[2]{\Big|_{#1}^{#2}}
+\newcommand{\evv}[2]{\Big|_{#1}^{#2}}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\s}[1]{\sqrt{#1}}
+\newcommand{\f}[2]{\frac{#1}{#2}}
+\newcommand{\p}[2]{\frac{\partial #1}{\partial #2}}
+\providecommand{\t}[1]{\text{#1}}
+\providecommand{\span}[1]{\text{span}\left(#1\right)}
+\providecommand{\set}[1]{\left\{#1\right\}}
+\providecommand{\l}[0]{\left}
+\providecommand{\r}[0]{\right}
+\newcommand{\m}[1]{\begin{matrix}#1\end{matrix}}
+\newcommand{\bm}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\renewcommand{\bf}[1]{\mathbf{#1}}
+\newcommand{\pn}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bk}[1]{\left[ #1 \right]}
+\newcommand{\cis}[1]{\pn{\cos\pn{#1} + i\sin\pn{#1}}}
+\newcommand{\cisi}[1]{\pn{\cos\pn{#1} - i\sin\pn{#1}}}
+\renewcommand{\Im}[1]{\text{Im}\pn{#1}}
+\renewcommand{\Re}[1]{\text{Re}\pn{#1}}
+\renewcommand{\k}[0]{\f{1}{4\pi\epsilon_0}}
+\renewcommand{\part}[1]{\vspace{1em}\noindent(#1)}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+\begin{document}
+\problemlist{Townsend 1.\{4, 9, 13\}}
+
+\begin{problem}[Townsend 1.4]
+	A radio station broadcasts at a frequency $\nu =\SI{91.5}{MHz}$ with a total radiated power of $P = \SI{20}{kW}$.
+	\begin{enumerate}
+		\item[(a)] What is the wavelength $\lambda$ of this radiation? 
+		\item[(b)] What is the energy of each photon in \SI{}{eV}? How many photons are emitted each second? How many photons are emitted in each cycle? 
+		\item[(c)] A particular radio receiver requires 2.0 microwatts of radiation to provide intelligible reception. How many \SI{91.5}{MHz} photons does this	 require per second? per cycle?
+		\item[(d)] Do the answers to (b) and (c) indicate that the granularity of the electromagnetic radiation can be neglected in these circumstances?
+	\end{enumerate}\end{problem}
+\begin{solution}
+\end{solution}
+\newpage
+
+\begin{problem}[Townsend 1.9]
+	A beam of UV light of wavelength $\lambda = \SI{197.0}{nm}$ falls onto a metal cathode. The stopping potential needed to keep any electrons from reaching the anode is \SI{2.08}{V}. 
+	\begin{enumerate}
+		\item[(a)] What is the work function W of the cathode surface, in eV? 
+		\item[(b)] What is the velocity $v$ of the fastest electrons emitted from the cathode? \textit{Note}: Since $K_{\text{max}}/mc^2 \ll 1$, the nonrelativistic expression for the kinetic energy can be utilized here. 
+		\item[(c)] If Avogadro's number of photons strikes each square meter of the surface in one hour, what is the average intensity $I$ of the beam, in units of \SI{}{W/m^2}?
+	\end{enumerate}
+\end{problem}
+\begin{solution}
+\end{solution}
+\newpage
+
+\begin{problem}[Townsend 1.13]
+	 The maximum kinetic energy of electrons ejected from sodium is \SI{1.85}{eV} for radiation of \SI{300}{nm} and \SI{0.82}{eV} for radiation of \SI{400}{nm}. Use this data to determine Planck's constant and the work function of sodium.
+\end{problem}
+\begin{solution}
+\end{solution}
+
+\end{document}

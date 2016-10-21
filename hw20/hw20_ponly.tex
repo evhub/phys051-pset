@@ -1,0 +1,92 @@
+% HMC Math dept HW template example
+% v0.04 by Eric J. Malm, 10 Mar 2005
+\documentclass[12pt,letterpaper,boxed,cm]{hmcpset}
+
+% set 1-inch margins in the document
+\usepackage[margin=1in]{geometry}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+% include this if you want to import graphics files with /includegraphics
+\usepackage{graphicx}
+\usepackage{cases}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{cases}
+\usepackage{mathalfa}
+\usetikzlibrary{arrows}
+
+% info for header block in upper right hand corner
+\name{Name: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\class{Physics 51}
+\assignment{Homework \#20}
+\duedate{November 21, 2016}
+
+\newcommand{\ev}[2]{\Big|_{#1}^{#2}}
+\newcommand{\evv}[2]{\Big|_{#1}^{#2}}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\s}[1]{\sqrt{#1}}
+\newcommand{\f}[2]{\frac{#1}{#2}}
+\newcommand{\p}[2]{\frac{\partial #1}{\partial #2}}
+\providecommand{\t}[1]{\text{#1}}
+\providecommand{\span}[1]{\text{span}\left(#1\right)}
+\providecommand{\set}[1]{\left\{#1\right\}}
+\providecommand{\l}[0]{\left}
+\providecommand{\r}[0]{\right}
+\newcommand{\m}[1]{\begin{matrix}#1\end{matrix}}
+\newcommand{\bm}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\renewcommand{\bf}[1]{\mathbf{#1}}
+\newcommand{\pn}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bk}[1]{\left[ #1 \right]}
+\newcommand{\cis}[1]{\pn{\cos\pn{#1} + i\sin\pn{#1}}}
+\newcommand{\cisi}[1]{\pn{\cos\pn{#1} - i\sin\pn{#1}}}
+\renewcommand{\Im}[1]{\text{Im}\pn{#1}}
+\renewcommand{\Re}[1]{\text{Re}\pn{#1}}
+\renewcommand{\k}[0]{\f{1}{4\pi\epsilon_0}}
+\renewcommand{\part}[1]{\vspace{1em}\noindent(#1)}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+\begin{document}
+\problemlist{41-P7*, 44-P3, 44-P4, 44-E3}
+
+\begin{problem}[41-P7*]
+	A plane wave of monochromatic light falls normally on a uniformly thin film of oil that covers a glass plate. The wavelength of the source can be carried continuously. Complete destructive interference of the reflected light is observed for wavelengths of \SI{485}{} and \SI{679}{nm} and for no wavelengths between them. If the index of refraction of the oil is \SI{1.32}{} and that of the glass is \SI{1.50}{}, find the thickness of the oil film.
+\end{problem}
+\begin{solution}
+\end{solution}
+\newpage
+
+\begin{problem}[44-P3]
+	A stack of polarizing sheets is arranged so that the angle between two any adjacent sheets is $\alpha$. The sheets are arranged so that $N$ sheets rotate the plane of polarization by $\theta$, where $\theta = N\alpha$. Calculate the fraction of light that will pass through the stack in the limit as $N \rightarrow \infty$. Assume that $\theta$ is fixed, so $\alpha \rightarrow 0$.
+\end{problem}
+\begin{solution}
+\end{solution}
+\newpage
+
+\begin{problem}[44-P4]
+	It is desired to rotate the plane of vibration of a beam of polarized light by 90$^\circ$.
+	\begin{enumerate}
+		\item[(a)] How might this be done using only polarizing sheets?
+		\item[(b)] How many sheets are required for the total intensity loss to be less than 5.0\%?
+ \end{enumerate}
+\end{problem}
+\begin{solution}
+\end{solution}
+\newpage
+ 
+\begin{problem}[44-E3]
+	A beam of unpolarized light of intensity \SI{12.2}{mW/m^2} falls at normal incidence on a polarizing sheet. 
+	\begin{enumerate}
+		\item[(a)] Find the maximum value of the electric field of the transmitted beam.
+		\item[(b)] Calculate the radiation pressure exerted on the polarizing sheet.
+	\end{enumerate}
+\end{problem}
+\begin{solution}
+\end{solution}
+\end{document}

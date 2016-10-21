@@ -1,0 +1,104 @@
+% HMC Math dept HW template example
+% v0.04 by Eric J. Malm, 10 Mar 2005
+\documentclass[12pt,letterpaper,boxed,cm]{hmcpset}
+
+% set 1-inch margins in the document
+\usepackage[margin=1in]{geometry}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+% include this if you want to import graphics files with /includegraphics
+\usepackage{graphicx}
+\usepackage{cases}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{cases}
+\usepackage{mathalfa}
+\usetikzlibrary{arrows}
+
+% info for header block in upper right hand corner
+\name{Name: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\class{Physics 51}
+\assignment{Homework \#18}
+\duedate{November 14, 2016}
+
+\newcommand{\ev}[2]{\Big|_{#1}^{#2}}
+\newcommand{\evv}[2]{\Big|_{#1}^{#2}}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\s}[1]{\sqrt{#1}}
+\newcommand{\f}[2]{\frac{#1}{#2}}
+\newcommand{\p}[2]{\frac{\partial #1}{\partial #2}}
+\providecommand{\t}[1]{\text{#1}}
+\providecommand{\span}[1]{\text{span}\left(#1\right)}
+\providecommand{\set}[1]{\left\{#1\right\}}
+\providecommand{\l}[0]{\left}
+\providecommand{\r}[0]{\right}
+\newcommand{\m}[1]{\begin{matrix}#1\end{matrix}}
+\newcommand{\bm}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\renewcommand{\bf}[1]{\mathbf{#1}}
+\newcommand{\pn}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bk}[1]{\left[ #1 \right]}
+\newcommand{\cis}[1]{\pn{\cos\pn{#1} + i\sin\pn{#1}}}
+\newcommand{\cisi}[1]{\pn{\cos\pn{#1} - i\sin\pn{#1}}}
+\renewcommand{\Im}[1]{\text{Im}\pn{#1}}
+\renewcommand{\Re}[1]{\text{Re}\pn{#1}}
+\renewcommand{\k}[0]{\f{1}{4\pi\epsilon_0}}
+\renewcommand{\part}[1]{\vspace{1em}\noindent(#1)}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+\begin{document}
+\problemlist{38-P5*, 35-E12, 35-P1, 35-E9}
+
+
+\begin{problem}[38-P5*]
+	A cube of edge $a$ has its edges parallel to the $x$, $y$, and $z$ axes of a rectangular coordinate system. A uniform electric field $\vec{\mathbf{E}}$ is parallel to the $y$ axis and a uniform magnetic field $\vec{\mathbf{B}}$ is parallel to the $x$ axis. Calculate
+	\begin{enumerate}
+		\item[(a)] the rate at which, according to the Poynting vector point of view, energy may be said to pass through each face of the cube and
+		\item[(b)] the net rate at which the energy stored in the cube may be said to change. 
+	\end{enumerate}	
+\end{problem}
+\begin{solution}
+\end{solution}
+\newpage
+
+
+\begin{problem}[35-E12]
+	The dipole moment associated with an atom of iron in an iron bar is $\SI{2.22}{\mu_B}$. Assume that all the atoms in the bar, which is \SI{4.86}{cm} long and has a cross-sectional area of \SI{1.31}{cm^2}, have their dipole moments aligned.
+	\begin{enumerate}
+		\item[(a)] What is the dipole moment of the bar?
+		\item[(b)] What torque must be exerted to hold this magnet at right angles to an external field of \SI{1.53}{T}? 
+	\end{enumerate}
+\end{problem}
+\begin{solution}
+\end{solution}
+\newpage
+
+\begin{problem}[35-P1]
+	A thin, plastic disk of radius $R$ has a charge $q$ uniformly distributed over its surface. If the disk rotates at an angular frequency $\omega$ about its axis, show that magnetic dipole moment of the disk is
+	\[
+		\mu = \f{\omega qR^2}{4}.
+	\]
+	(Hint: The rotating disk is equivalent to an array of current loops.)
+\end{problem}
+\begin{solution}
+\end{solution}
+\newpage
+
+\begin{problem}[35-E9]
+	In the lowest energy state of the hydrogen atom, the most probable distance between the single orbiting electron and the central proton is $\SI{5.29e-11}{m}$. Calculate
+	\begin{enumerate}
+		\item[(a)] the electric field and
+		\item[(b)] the magnetic field 
+	\end{enumerate}
+	set up by the proton at this distance, measured along the proton's axis of spin. See Table 35-1 for the magnetic moment of the proton.
+\end{problem}
+\begin{solution}
+\end{solution}
+
+\end{document}
