@@ -1,0 +1,80 @@
+% HMC Math dept HW template example
+% v0.04 by Eric J. Malm, 10 Mar 2005
+\documentclass[12pt,letterpaper,boxed,cm]{hmcpset}
+
+% set 1-inch margins in the document
+\usepackage[margin=1in]{geometry}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+% include this if you want to import graphics files with /includegraphics
+\usepackage{graphicx}
+\usepackage{cases}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{cases}
+\usepackage{mathalfa}
+\usetikzlibrary{arrows}
+
+% info for header block in upper right hand corner
+\name{Name: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\class{Physics 51}
+\assignment{Homework \#19}
+\duedate{November 17, 2016}
+
+\newcommand{\ev}[2]{\Big|_{#1}^{#2}}
+\newcommand{\evv}[2]{\Big|_{#1}^{#2}}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\s}[1]{\sqrt{#1}}
+\newcommand{\f}[2]{\frac{#1}{#2}}
+\newcommand{\p}[2]{\frac{\partial #1}{\partial #2}}
+\providecommand{\t}[1]{\text{#1}}
+\providecommand{\span}[1]{\text{span}\left(#1\right)}
+\providecommand{\set}[1]{\left\{#1\right\}}
+\providecommand{\l}[0]{\left}
+\providecommand{\r}[0]{\right}
+\newcommand{\m}[1]{\begin{matrix}#1\end{matrix}}
+\newcommand{\bm}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\renewcommand{\bf}[1]{\mathbf{#1}}
+\newcommand{\pn}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bk}[1]{\left[ #1 \right]}
+\newcommand{\cis}[1]{\pn{\cos\pn{#1} + i\sin\pn{#1}}}
+\newcommand{\cisi}[1]{\pn{\cos\pn{#1} - i\sin\pn{#1}}}
+\renewcommand{\Im}[1]{\text{Im}\pn{#1}}
+\renewcommand{\Re}[1]{\text{Re}\pn{#1}}
+\renewcommand{\k}[0]{\f{1}{4\pi\epsilon_0}}
+\renewcommand{\part}[1]{\vspace{1em}\noindent(#1)}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+\begin{document}
+\problemlist{41-E23, SUP4}
+
+\begin{problem}[41-E23]
+A disabled tanker leaks kerosene ($n = 1.20$) into the Persian Gulf, creating a large slick on top of the water ($n = 1.33$).
+\begin{enumerate}
+	\item[(a)] If you are looking straight down from an airplane onto a region of the slick where its thickness is \SI{460}{nm}, for which wavelength(s) of visible light is the reflection the greatest?
+	\item[(b)] If you are scuba diving directly under this same region of the slick, for which wavelength(s) of visible light is the transmitted intensity the strongest?
+\end{enumerate}
+\end{problem}
+\begin{solution}
+\end{solution}
+\newpage
+
+\begin{problem}[SUP4]
+Light traveling in air ($n_1 = 1$) enters the smooth, flat surface of a pond ($n_2 = 1.33$) at normal incidence. 
+\begin{enumerate}
+	\item[(a)] What fraction of the light is reflected and what fraction is transmitted? 
+	\item[(b)] If the maximum amplitude of the electric field in the incident light is $E_0$ ,଴what is the maximum amplitude of the electric field in the reflected light? 
+	\item[(c)] When you see scenery reflected in a still pond or lake, how is that situation different from the one you have just calculated?
+	\end{enumerate}
+	 
+\end{problem}
+\begin{solution}
+\end{solution}
+\end{document}
